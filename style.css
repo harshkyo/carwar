@@ -1,4 +1,253 @@
 * {
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: blanchedalmond;
+    display: flex;
+}
+
+#icon, #ico {
+    height: 60px;
+    width: 100px;
+    margin-left: 7px;
+}
+
+#search {
+    margin: 5px auto;
+}
+
+#search-box {
+    width: 400px;
+    height: 40px;
+    border: rgb(65, 65, 65);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+#search-button {
+    margin: 0;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    height: 40px;
+    width: 50px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#login {
+    height: 100%;
+    width: 150px;
+}
+
+#login-button, #signup-button {
+    text-decoration: none;
+    height: 60px;
+    width: 150px;
+    font-size: 25px;
+    color: grey;
+    background-color:blanchedalmond;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: wheat;
+}
+
+#login-button:hover {
+    border-bottom-style: none;
+}
+
+#signup-button {
+    float: right;
+    position: absolute;
+    display: none;
+}
+
+#login:hover #signup-button{
+    display: block;
+    border-top-style: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#login:hover #login-button{
+    border-bottom-style: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+#login-popup-button, .cancelbtn, .signupbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+#login-popup-button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+  
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+  
+.container {
+    padding: 16px;
+}
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+#cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.signupbtn, #cancelbtn {
+    float: left;
+    width: 50%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+  
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+.col1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 500px;
+    background-color: grey;
+}
+
+.col2 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 500px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#find-car {
+    width: 70%;
+    height: 400px;
+    padding: 30px;
+    margin: 30px auto;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+input[type=radio] {
+    padding: 20px;
+    margin: 20px;
+    margin-left: 2px;
 }
